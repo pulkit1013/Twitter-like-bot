@@ -38,8 +38,8 @@ def like_tweets():
         print( str(mention.id) + " -- " + mention.full_text)
         last_seen_id=mention.id
         store_last_seen_id(last_seen_id,FILE_NAME)
-        if '#customtag' in mention.full_text.lower():
-            print("Found CUSTOMTAG !!!")
+        if '#helloworld' in mention.full_text.lower():
+            print("Found HELLOWORLD !!!")
             print("Responding back....")
             mention.favorite()
 
